@@ -16,7 +16,7 @@ encoders = joblib.load("label_encoder.pkl")
 
 st.title("Salary Prediction App")
 
-Age = st.number_imput("Age", 18, 65, 25)
+age = st.number_imput("Age", 18, 65, 25)
 
 gender = st.selectbox("Gender", encoders["Gender"].classes_)
 education = st.selectbox("Education Level", encoders["Education Level"].classes_)
